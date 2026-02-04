@@ -1,0 +1,43 @@
+CSS selector 
+
+ID
+-----------
+#name
+
+driver.findElement(By.cssSelector("#name"));
+
+
+class
+--------------------------
+.form-control
+
+driver.findElement(By.cssSelector(".form-control"));
+
+
+tagName
+------------------------------
+input
+driver.findElement(By.cssSelector("input"));
+
+
+Partial Matches
+-------------------------------------
+
+
+[name^='user']  /// starts with user
+
+[name$='name']/// ends with name
+
+[name$='me']// ends with me
+
+[name*='ser']/// contains ser 
+
+[placeholder*='Add']//// contains address
+
+
+
+
+
+
+
+
