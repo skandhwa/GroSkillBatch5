@@ -1,0 +1,26 @@
+XPath Axes 
+
+
+1. Parent Axis
+//h3[@class='name']/parent::div
+
+2. Child Axis
+//div[@id='user1']/child::p
+
+3. Following-sibling
+//div[@id='user1']/following-sibling::div
+
+4. Preceding-sibling
+//div[@id='user2']/preceding-sibling::div
+
+5. Descendant Axis
+//div[@id='users']/descendant::li
+
+6. Ancestor Axis
+//li[contains(text(),'Admin')]/ancestor::div[@class='user']
+
+7. Following Axis
+//div[@id='users']/following::div
+
+8. Preceding Axis
+//table/preceding::div[@id='users']
