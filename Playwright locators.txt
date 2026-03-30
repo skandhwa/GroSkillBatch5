@@ -1,0 +1,65 @@
+getByRole() (Explicit + Implicit accessibility)
+-----------------------------------------------------------
+
+await page.getByRole('button', { name: 'Submit' }).click();
+await page.getByRole('button', { name: 'Refresh' }).click();
+
+// Textbox inputs (implicit role = textbox)
+await page.getByRole('textbox', { name: 'First Name' }).fill('John');
+await page.getByRole('textbox', { name: 'Last Name' }).fill('Doe');
+await page.getByRole('textbox', { name: 'Address' }).fill('Hyderabad');
+
+// Email
+await page.getByRole('textbox', { name: 'Email address' }).fill('test@mail.com');
+
+// Password
+await page.getByRole('textbox', { name: 'Password' }).fill('123456');
+await page.getByRole('textbox', { name: 'Confirm Password' }).fill('123456');
+
+// Radio buttons (Gender)
+await page.getByRole('radio', { name: 'Male' }).check();
+await page.getByRole('radio', { name: 'FeMale' }).check();
+
+// Checkbox (Hobbies)
+await page.getByRole('checkbox', { name: 'Cricket' }).check();
+
+
+getByText() (Text content)
+---------------------------------------------
+
+// Heading
+await page.getByText('Register').isVisible();
+
+// Labels / static text
+await page.getByText('Full Name').isVisible();
+await page.getByText('Address').isVisible();
+
+// Button via text
+await page.getByText('Submit').click();
+
+
+getByLabel()
+-----------------------------------
+await page.getByLabel('First Name').fill('John');
+await page.getByLabel('Last Name').fill('Doe');
+await page.getByLabel('Address').fill('India');
+await page.getByLabel('Email address').fill('abc@test.com');
+await page.getByLabel('Phone').fill('9876543210');
+
+// Password fields
+await page.getByLabel('Password').fill('123456');
+await page.getByLabel('Confirm Password').fill('123456');
+
+getByPlaceholder() 
+----------------------------------------
+
+await page.getByPlaceholder('First Name').fill('John');
+await page.getByPlaceholder('Last Name').fill('Doe');
+await page.getByPlaceholder('Email address').fill('abc@test.com');
+
+
+
+
+
+
+
