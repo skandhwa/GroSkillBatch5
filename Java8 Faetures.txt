@@ -1,0 +1,123 @@
+1. Lambda expression
+
+2. Functional interface
+
+3. STream API
+
+4.Default Method in interface
+
+5. Static Method in interface
+
+6. Optional class
+
+7. Method Reference
+
+8. LocalDate, LocalTime,LocalDateTime
+
+9. forEach Method
+
+10.Collectors API 
+
+
+Lambda Exp
+--------------------------------------
+
+Anonymous functions
+
+No Name , No modidifer, No return Type
+Can be only used with Functional interface
+
+public  void test()
+{
+
+SYSOUT("Hi")
+
+}
+
+()->SYSOUT("Hi")
+
+
+
+public int add(int a,int b)
+{
+return a+b;
+
+}
+
+
+
+(int a,int b)->return a+b;
+
+
+
+
+
+
+
+Advantage
+-------------------
+1. Reduces the lines of code
+2. Sequential and parallel execution
+3. Enables functional Programming --Write logic like pipeline operations
+
+
+Functional Interface
+-----------------------------------------
+
+Functional interface is that which contains only one abstract method.
+Abstract method is that method which contains only declaration but no body 
+
+
+@Functionalinterface
+interface I1
+{
+
+void test();
+
+}
+
+Stream API 
+-------------------------
+Stream API is used to process collections of data in an functional and declarative way 
+java.utl.stream package
+
+filtering, mapping,sorting,reducing
+To process group of object then we are going to use stream API
+Does not store any data only be used to perform operations on data
+
+Collect and Collectors 
+Collect is a terminal operation
+To convert stream into final result
+
+Collectors is a utility class 
+Provides ready made method to use inside collect()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
